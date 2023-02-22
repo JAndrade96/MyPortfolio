@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+
+
+/* Configurations Needed */
+
+:root{
+    --white: #ffffff;
+    --leal: #2a2b3d;
+    --hex: #34b0be;
+    --hex-ceca: #d1ceca;
+    --blue-dark: #03051c; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins';
+  overflow-x: hidden;
+  background: black;
+}
+
+
+html, #app {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+
+  /* Presentation */
+  
+  #app {
+    position: absolute;
+    color: #ffffff;
+    font-family: 'Poppins';
+    text-align: center;
+    text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+  }
+  
+  #app h1 {
+    --fontSize: 40px;
+    --lineHeight: 50px;
+    width: auto;
+    line-height: var(--lineHeight);
+    margin: calc(40vh - var(--lineHeight)) auto 0;
+    font-size: var(--fontSize);
+  }
+  
+  #app a {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #app canvas {
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+  }
+
+  /* Button */
+
+  .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+  
+  .button:hover {
+    background-color: #00dfb9;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+
+  /* Menu */
+
+  #sect-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-menu{
+    position: absolute;
+    height: 80px;
+    top:100%
+  }
+
+  .class-menu{
+    display: flex;
+    margin: 4.5rem;
+    list-style: none;
+  }
+
+.class-menu a{
+  color: white;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+.class-menu a:hover{
+  color: var(--hex);
+}
+
+/* ABOUT */
+
+.about{
+  color: var(--white);
+  position: absolute;
+  left: 1rem;
+  top: 121%;
+  font-size: 32px;
+}
+
+
